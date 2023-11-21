@@ -1,0 +1,37 @@
+@import './colors';
+
+.main-btn{
+    background-color: #FFB000;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+}
+
+.v-form{
+    width: 100%;
+    button{
+        background-color: rgb(41, 193, 235);
+        width: 100%;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+.inputs{
+    label{
+        display: block;
+    }
+
+    input{
+        border: 1px solid $neutral-dark;
+        padding: 5px;
+        width: 100%;
+        border-radius: 6px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,67 @@
+@import './colors';
+
+.main-btn{
+    border: 3px solid #29ADB2;
+    font-size: 10px !important;
+}
+
+.header-bottom{
+    h4{
+        display: inline-block;
+        margin-right: 15px;
+
+        span{
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+thead{
+    text-align: left;
+}
+
+tbody tr{
+    &:nth-child(odd){
+        background-color: $neutral-light;
+    }
+}
+
+.product-cover{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    img{
+        width: 100px;
+    }
+}
+
+.num{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.start{
+    background-color: #64CCC5;
+    float: inline-end;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: inherit;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.close{
+    position: absolute;
+    float: inline-end;
+    right: 5%;
+    cursor: pointer;
+}

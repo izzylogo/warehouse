@@ -1,0 +1,59 @@
+@import './colors';
+
+.button-cover{
+    button{
+        background-color: $neutral-dark;
+        color: white;
+        margin-left: 5px;
+
+        &:last-child{
+            background-color: rgb(80, 41, 235)
+        }
+    }
+}
+
+.v-main{
+    background-color: $neutral-dark-active;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.supply-top{
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    .left{
+        gap: 5px;
+        display: flex;
+        align-items: baseline;
+
+        h3{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 14px;
+
+            &:last-child{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.supply-main{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}

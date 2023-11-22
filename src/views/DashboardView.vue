@@ -225,7 +225,7 @@
             :elevation="1"
         >
             <template v-slot:prepend>
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             </template>
 
             <v-app-bar-title>Suppliers</v-app-bar-title>

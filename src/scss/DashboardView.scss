@@ -65,3 +65,15 @@ li, .v-list-item-title{
 svg{
     min-width: 24px;
 }
+
+.button-cover{
+    button{
+        background-color: $neutral-dark !important;
+        color: white;
+        margin-left: 5px;
+
+        &:last-child{
+            background-color: rgb(80, 41, 235) !important;
+        }
+    }
+}

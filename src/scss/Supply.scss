@@ -26,6 +26,13 @@
     align-items: center;
     margin-bottom: 10px;
     justify-content: space-between;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: left;
+        align-items: baseline;
+    }
     .left{
         gap: 5px;
         display: flex;

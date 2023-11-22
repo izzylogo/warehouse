@@ -1,44 +1,6 @@
 <template>
   <div class="supply">
     <div class="supply-cover">
-
-        <!-- navbar -->
-        <v-app-bar
-            density="compact"
-            :elevation="1"
-        >
-            <template v-slot:prepend>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
-            </template>
-
-            <v-app-bar-title>Suppliers</v-app-bar-title>
-            <template v-slot:append>
-                <div class="button-cover">
-                    <v-btn>
-                        <v-icon
-                        start
-                        icon="mdi-sync"
-                        ></v-icon>
-                        SUPPLIER
-                    </v-btn>
-                    <v-btn>
-                        <v-icon
-                        start
-                        icon="mdi-sync"
-                        ></v-icon>
-                        PRODUCTS
-                    </v-btn>
-                    <v-btn>
-                        <v-icon
-                        start
-                        icon="mdi-sync"
-                        ></v-icon>
-                        ORDERS
-                    </v-btn>
-                </div>
-            </template>
-        </v-app-bar>
-
         <!-- main -->
         <v-main>
             <div class="supply-top">

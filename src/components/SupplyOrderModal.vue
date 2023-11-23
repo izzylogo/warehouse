@@ -14,7 +14,8 @@
         <v-card style="padding: 20px;">
           <v-card-text style="display: flex; margin-bottom: 20px; padding: 0px !important; align-items: center; justify-content: space-between;">
             <div class="cover">
-              <Icon icon="icon-park-outline:order" width="23" height="23" />
+              <v-icon icon="mdi-clipboard-outline"></v-icon>
+              <!-- <Icon icon="icon-park-outline:order" width="23" height="23" /> -->
                 <h3>New Supply Order</h3>
             </div>
             <div class="cansel">

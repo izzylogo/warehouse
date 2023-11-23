@@ -42,7 +42,7 @@
                         <td>
                             <p>{{ item.namesup }}</p>
                             <div class="name-cover">
-
+                                <InternalTable/>
                             </div>
                         </td>
                         <td>
@@ -73,10 +73,12 @@
 
 <script>
 import { Icon } from '@iconify/vue';
+import InternalTable from './InternalTable.vue';
 export default {
     name: 'SupplyTable',
     components: {
 		Icon,
+        InternalTable,
 	},
     data () {
       return {

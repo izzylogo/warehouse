@@ -1,0 +1,35 @@
+@import './colors';
+
+.internal{
+    padding: 10px;
+    border: 1px solid rgba(228, 80, 80, 0.777);
+}
+
+table{
+    // padding: 5px;
+    width: 100%;
+    border-collapse: collapse;
+
+    thead{
+        font-size: 14px;
+        
+        th{
+            border-bottom: 1px solid rgba(40, 40, 40, 0.409);
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+    tbody{
+        font-size: 12px;
+        margin-top: 10px;
+        td{
+            margin-top: 30px;
+
+            button{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

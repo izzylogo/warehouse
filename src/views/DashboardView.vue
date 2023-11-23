@@ -233,7 +233,7 @@
             </div>
 
             <div class="rows" style="padding: 10px;">
-              <div class="cols" style="display: flex; align-items: center;">
+              <div class="cols cols2" style="display: flex; align-items: center;">
                 <v-app-bar-title>Suppliers</v-app-bar-title>
               </div>
               <div class="cols" >

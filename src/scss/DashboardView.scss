@@ -68,6 +68,12 @@ svg{
 
 .button-cover{
     text-align: end;
+
+    @media (max-width: 500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 5px;
+    }
     button{
         background-color: $neutral-dark !important;
         color: white;
@@ -92,10 +98,20 @@ svg{
     
     @media (max-width: 600px) {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: baseline;
         margin-top: 10px;
 
+    }
+
+    // @media (max-width: 500px) {
+    //     margin-top: 80px;
+    // }
+
+    .cols2{
+        @media (max-width: 600px) {
+            margin-top: 50px;
+        }
     }
 }
 
@@ -104,11 +120,18 @@ svg{
     @media (max-width: 600px) {
         height: 70px !important;
     }
+
+    @media (max-width: 500px) {
+        height: 120px !important;
+    }
     // margin-bottom: 20px;
 }
 
 .menu-bar{
-    margin-top: 25px;
+
+    @media (max-width: 600px) {
+        margin-top: 25px;
+    }
 }
 
 .v-toolbar-title{

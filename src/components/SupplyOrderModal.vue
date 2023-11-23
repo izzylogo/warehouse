@@ -12,26 +12,28 @@
         width="400px"
       >
         <v-card style="padding: 20px;">
-          <v-card-text style="display: flex; margin-bottom: 20px; align-items: center; justify-content: space-between;">
+          <v-card-text style="display: flex; margin-bottom: 20px; padding: 0px !important; align-items: center; justify-content: space-between;">
             <div class="cover">
-                <v-icon icon="mdi-calender"></v-icon>
+              <Icon icon="icon-park-outline:order" width="23" height="23" />
                 <h3>New Supply Order</h3>
             </div>
-            <v-icon icon="mdi-cancel"></v-icon>
+            <div class="cansel">
+              <Icon icon="iconamoon:close-bold" width="30" height="30" />
+            </div>
           </v-card-text>
           <v-card-actions>
             <v-form>
                 <div class="inputs">
                     <label for="name">Order Name</label>
-                    <input type="text">
+                    <input type="text" placeholder="KOFF_18_08_2023_13-19">
                 </div>
                 <div class="inputs">
-                    <label for="name">Order Name</label>
-                    <input type="text">
+                    <label for="name">When you will place the order?</label>
+                    <input type="text" placeholder="18_08_2023">
                 </div>
                 <div class="inputs">
-                    <label for="name">Order Name</label>
-                    <input type="text">
+                    <label for="name">Shipping date (estimate)</label>
+                    <input type="text" placeholder="21_08_2023">
                 </div>
                 <v-btn>Start Order</v-btn>
             </v-form>
@@ -42,12 +44,16 @@
 </template>
 
 <script>
+import { Icon } from '@iconify/vue';
     export default {
       name: 'SupplyOrder',
       data () {
         return {
           dialog: false,
         }
+      },
+      components: {
+        Icon,
       },
     }
 </script>

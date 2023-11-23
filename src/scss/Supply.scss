@@ -1,16 +1,16 @@
 @import './colors';
 
-.button-cover{
-    button{
-        background-color: $neutral-dark;
-        color: white;
-        margin-left: 5px;
+// .button-cover{
+//     button{
+//         background-color: $neutral-dark;
+//         color: white;
+//         margin-left: 5px;
 
-        &:last-child{
-            background-color: rgb(80, 41, 235)
-        }
-    }
-}
+//         &:last-child{
+//             background-color: rgb(80, 41, 235)
+//         }
+//     }
+// }
 
 .v-main{
     background-color: $neutral-dark-active;
@@ -32,7 +32,10 @@
         gap: 20px;
         justify-content: left;
         align-items: baseline;
+        margin-top: 30px;
     }
+
+
     .left{
         gap: 5px;
         display: flex;

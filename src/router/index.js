@@ -32,7 +32,7 @@ const mobileView = {
 }
 
 let dashboardView = {
-  path: '/dashboard',
+  path: '/',
   component: DashboardView,
   name: 'Dashboard',
   redirect: '/dashboard/supply',

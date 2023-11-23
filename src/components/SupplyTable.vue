@@ -15,57 +15,59 @@
         </div>
 
         <!-- table -->
-        <table>
-            <thead>
-                <tr>
-                    <th><v-checkbox style="align-items: end; margin-bottom: -20px;"></v-checkbox></th>
-                    <th><p>id</p></th>
-                    <th><p>Images</p></th>
-                    <th><p>EAN</p></th>
-                    <th><p>Name</p></th>
-                    <th><p>Sales</p></th>
-                    <th><p>Supplier</p></th>
-                    <th><p>Stock</p></th>
-                    <th><p>loc_qty</p></th>
-                    <th><p>Actions</p></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr
-                    v-for="item in details" :key="item.id"
-                >
-                    <td><v-checkbox style="align-items: end; margin-bottom: -20px;"></v-checkbox></td>
-                    <td><p>{{ item.id }}</p></td>
-                    <td><img :src="item.image" alt="image" class="product-img"></td>
-                    <td><p>{{ item.ean }}</p></td>
-                    <td>
-                        <p>{{ item.namesup }}</p>
-                        <div class="name-cover">
+        <div class="table-contain">
+            <table>
+                <thead>
+                    <tr>
+                        <th><v-checkbox style="align-items: end; margin-bottom: -20px;"></v-checkbox></th>
+                        <th><p>id</p></th>
+                        <th><p>Images</p></th>
+                        <th><p>EAN</p></th>
+                        <th><p>Name</p></th>
+                        <th><p>Sales</p></th>
+                        <th><p>Supplier</p></th>
+                        <th><p>Stock</p></th>
+                        <th><p>loc_qty</p></th>
+                        <th><p>Actions</p></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        v-for="item in details" :key="item.id"
+                    >
+                        <td><v-checkbox style="align-items: end; margin-bottom: -20px;"></v-checkbox></td>
+                        <td><p>{{ item.id }}</p></td>
+                        <td><img :src="item.image" alt="image" class="product-img"></td>
+                        <td><p>{{ item.ean }}</p></td>
+                        <td>
+                            <p>{{ item.namesup }}</p>
+                            <div class="name-cover">
 
-                        </div>
-                    </td>
-                    <td>
-                        <div class="sales-date">
-                            <p><span>0</span>24h</p>
-                            <p><span>0</span>7d</p>
-                            <p><span>0</span>14d</p>
-                            <p><span>0</span>30d</p>
-                        </div>
-                    </td>
-                    <td><p>{{ item.supplier }}</p></td>
-                    <td><p>{{ item.stoc }}</p></td>
-                    <td><p>{{ item.loc_qty }}</p></td>
-                    <td>
-                        <div class="cart-cover">
-                            <h4>2</h4>
-                            <div class="cart-icon">
-                                <Icon icon="fa6-solid:cart-plus" width="24" height="24" />
                             </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                        <td>
+                            <div class="sales-date">
+                                <p><span>0</span>24h</p>
+                                <p><span>0</span>7d</p>
+                                <p><span>0</span>14d</p>
+                                <p><span>0</span>30d</p>
+                            </div>
+                        </td>
+                        <td><p>{{ item.supplier }}</p></td>
+                        <td><p>{{ item.stoc }}</p></td>
+                        <td><p>{{ item.loc_qty }}</p></td>
+                        <td>
+                            <div class="cart-cover">
+                                <h4>2</h4>
+                                <div class="cart-icon">
+                                    <Icon icon="fa6-solid:cart-plus" width="24" height="24" />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 

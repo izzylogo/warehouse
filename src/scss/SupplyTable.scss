@@ -25,11 +25,16 @@
         display: flex;
         gap: 10px;
     }
+
+   @media (max-width: 900px) {
+    flex-direction: column;
+   }
 }
 
 table{
     width: 100%;
     border-collapse: collapse;
+    min-width: 1200px;
 
     thead{
         p{
@@ -43,6 +48,12 @@ table{
         padding: 20px;
         text-align: left;
     }
+}
+
+.table-contain{
+      // min-width: 1200px;
+    max-width: 100%;
+    overflow-x: scroll;
 }
 
 .product-img{

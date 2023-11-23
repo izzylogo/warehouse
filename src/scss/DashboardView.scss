@@ -67,13 +67,50 @@ svg{
 }
 
 .button-cover{
+    text-align: end;
     button{
         background-color: $neutral-dark !important;
         color: white;
         margin-left: 5px;
 
+        // display: block;
+
         &:last-child{
             background-color: rgb(80, 41, 235) !important;
         }
     }
+
+
+}
+
+.rows{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        margin-top: 10px;
+
+    }
+}
+
+.v-toolbar{
+
+    @media (max-width: 600px) {
+        height: 70px !important;
+    }
+    // margin-bottom: 20px;
+}
+
+.menu-bar{
+    margin-top: 25px;
+}
+
+.v-toolbar-title{
+    font-weight: 600;
 }

@@ -223,13 +223,20 @@
          <v-app-bar
             density="compact"
             :elevation="1"
+            
         >
-            <template v-slot:prepend>
-            <v-app-bar-nav-icon v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-            </template>
+            <!-- <template v-slot:prepend>
+            </template> -->
+            <!-- <v-app-bar-nav-icon v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"></v-app-bar-nav-icon> -->
+            <div class="menu-bar">
+              <Icon icon="ion:menu" width="50" height="50" v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"/>
+            </div>
 
-            <v-app-bar-title>Suppliers</v-app-bar-title>
-            <template v-slot:append>
+            <div class="rows" style="padding: 10px;">
+              <div class="cols" style="display: flex; align-items: center;">
+                <v-app-bar-title>Suppliers</v-app-bar-title>
+              </div>
+              <div class="cols" >
                 <div class="button-cover">
                     <v-btn>
                         <v-icon
@@ -253,7 +260,10 @@
                         ORDERS
                     </v-btn>
                 </div>
-            </template>
+              </div>
+            </div>
+            <!-- <template v-slot:append>
+            </template> -->
         </v-app-bar>
         <router-view></router-view>
       </v-main>

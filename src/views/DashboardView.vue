@@ -237,7 +237,7 @@
                 <v-app-bar-title>Suppliers</v-app-bar-title>
               </div>
               <div class="cols" >
-                <div class="button-cover">
+                <div class="button-cover" v-if="!$vuetify.display.smAndDown">
                     <v-btn>
                         <v-icon
                         start

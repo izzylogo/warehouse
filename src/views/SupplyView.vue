@@ -1,9 +1,35 @@
 <template>
   <div class="supply">
     <div class="supply-cover">
+
         
         <!-- main -->
         <v-main>
+            <div class="supply-btn" v-if="$vuetify.display.smAndDown">
+                <div class="button-cover">
+                    <v-btn>
+                        <v-icon
+                        start
+                        icon="mdi-sync"
+                        ></v-icon>
+                        SUPPLIER
+                    </v-btn>
+                    <v-btn>
+                        <v-icon
+                        start
+                        icon="mdi-sync"
+                        ></v-icon>
+                        PRODUCTS
+                    </v-btn>
+                    <v-btn>
+                        <v-icon
+                        start
+                        icon="mdi-sync"
+                        ></v-icon>
+                        ORDERS
+                    </v-btn>
+                </div>
+            </div>
             <div class="supply-top">
                 <div class="left">
                     <h3>Supply Order</h3> 

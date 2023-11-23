@@ -1,16 +1,27 @@
 @import './colors';
 
-// .button-cover{
-//     button{
-//         background-color: $neutral-dark;
-//         color: white;
-//         margin-left: 5px;
+.button-cover{
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    button{
+        background-color: $neutral-dark;
+        color: white;
+        margin-left: 5px;
 
-//         &:last-child{
-//             background-color: rgb(80, 41, 235)
-//         }
-//     }
-// }
+        &:last-child{
+            background-color: rgb(80, 41, 235)
+        }
+    }
+}
+
+.supply-btn{
+    margin-top: 10px;
+}
 
 .v-main{
     background-color: $neutral-dark-active;
@@ -33,10 +44,6 @@
         justify-content: left;
         align-items: baseline;
         margin-top: 30px;
-    }
-
-    @media (max-width: 500px) {
-        margin-top: 70px;
     }
 
 

@@ -27,41 +27,43 @@
             <Icon style="display: inline-block;" icon="fa6-solid:pen" width="24" height="24" />
           </v-card-text>
           <v-card-text>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Quality</th>
-                        <th>Stock</th>
-                        <th>14 days sales</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr
-                        v-for="item in products"
-                        :key="item.stock"
-                    >
-                        <td>
-                            <div class="product-cover">
-                                <img :src="item.image" alt="">
-                                <div class="desc">
-                                    <p>{{ item.description }}</p>
-                                    <p>{{ item.description2 }}</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="num">
-                                <p>2</p>
-                                <p>22</p>
-                            </div>
-                            <v-progress-linear  style="width: 150px; margin-left: -10px; margin-right: 10px;" :model-value="item.value"></v-progress-linear>
-                        </td>
-                        <td><p style="text-align: center;">{{ item.stock }}</p></td>
-                        <td><p style="text-align: center;">{{ item.day }}</p></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-cover">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Product</th>
+                          <th>Quality</th>
+                          <th>Stock</th>
+                          <th>14 days sales</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr
+                          v-for="item in products"
+                          :key="item.stock"
+                      >
+                          <td>
+                              <div class="product-cover">
+                                  <img :src="item.image" alt="">
+                                  <div class="desc">
+                                      <p>{{ item.description }}</p>
+                                      <p>{{ item.description2 }}</p>
+                                  </div>
+                              </div>
+                          </td>
+                          <td>
+                              <div class="num">
+                                  <p>2</p>
+                                  <p>22</p>
+                              </div>
+                              <v-progress-linear  style="width: 150px; margin-left: -10px; margin-right: 10px;" :model-value="item.value"></v-progress-linear>
+                          </td>
+                          <td><p style="text-align: center;">{{ item.stock }}</p></td>
+                          <td><p style="text-align: center;">{{ item.day }}</p></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
           </v-card-text>
           <v-card-text>
             <v-btn variant="flat" class="start">Start Order</v-btn>

@@ -13,7 +13,7 @@
         span{
             font-weight: 400;
             font-size: 14px;
-        }
+        } 
     }
 }
 
@@ -21,7 +21,32 @@ table{
     width: 100%;
     padding: 10px;
     border-collapse: collapse;
+    min-width: 900px;
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar {
+        width: 5px; 
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(21, 195, 143);
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
+
 }
+
+.table-cover{
+    // min-width: 1200px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
 
 thead{
     text-align: left;
@@ -39,6 +64,10 @@ tbody tr{
     padding: 5px;
     img{
         width: 100px;
+
+        @media (max-width: 600px) {
+            width: 50px;
+        }
     }
 }
 

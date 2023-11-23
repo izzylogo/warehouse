@@ -1,6 +1,7 @@
 <template>
   <div class="supply">
     <div class="supply-cover">
+        
         <!-- main -->
         <v-main>
             <div class="supply-top">

@@ -15,7 +15,7 @@
         </div>
 
         <!-- table -->
-        <div class="table-contain">
+        <div class="table-contain"> 
             <table>
                 <thead>
                     <tr>

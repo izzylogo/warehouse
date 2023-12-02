@@ -53,6 +53,11 @@ table{
       }
 
     thead{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 10;
+        border-bottom: 1px solid black;
         p{
             font-size: 10px;
             text-align: left;
@@ -70,6 +75,7 @@ table{
       // min-width: 1200px;
     max-width: 100%;
     overflow-x: scroll;
+    height: 85dvh;
 }
 
 .product-img{

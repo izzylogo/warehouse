@@ -121,3 +121,16 @@ svg{
 .v-toolbar-title{
     font-weight: 600;
 }
+
+.logo{
+    display: flex;
+    background-color: #7ed7c1a0;
+    width: 250px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.logo-cover{
+    position: absolute;
+    top: 0;
+}

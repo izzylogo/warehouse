@@ -11,8 +11,10 @@
       >
         <v-list>
           <v-list-item>
-            <div class="logo">
-                <img style="width: 120px" :src="require('../assets/arthian.png')" alt="">
+            <div class="logo-cover">
+              <div class="logo">
+                  <img style="width: 120px" :src="require('../assets/arthian.png')" alt="">
+              </div>
             </div>
           </v-list-item>
         </v-list>
@@ -220,51 +222,47 @@
 
       <v-main>
          <!-- navbar -->
-         <v-app-bar
+         <AppBar/>
+         <!-- <v-app-bar
             density="compact"
             :elevation="1"
             
         >
-            <!-- <template v-slot:prepend>
-            </template> -->
-            <!-- <v-app-bar-nav-icon v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"></v-app-bar-nav-icon> -->
-            <div class="menu-bar">
-              <Icon icon="ion:menu" width="50" height="50" v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"/>
-            </div>
+          <div class="menu-bar">
+            <Icon icon="ion:menu" width="50" height="50" v-if="$vuetify.display.mdAndDown" @click.stop="drawer = !drawer"/>
+          </div>
 
-            <div class="rows" style="padding: 10px;">
-              <div class="cols cols2" style="display: flex; align-items: center;">
-                <v-app-bar-title>Suppliers</v-app-bar-title>
-              </div>
-              <div class="cols" >
-                <div class="button-cover" v-if="!$vuetify.display.smAndDown">
-                    <v-btn>
-                        <v-icon
-                        start
-                        icon="mdi-sync"
-                        ></v-icon>
-                        SUPPLIER
-                    </v-btn>
-                    <v-btn>
-                        <v-icon
-                        start
-                        icon="mdi-sync"
-                        ></v-icon>
-                        PRODUCTS
-                    </v-btn>
-                    <v-btn>
-                        <v-icon
-                        start
-                        icon="mdi-sync"
-                        ></v-icon>
-                        ORDERS
-                    </v-btn>
-                </div>
+          <div class="rows" style="padding: 10px;">
+            <div class="cols cols2" style="display: flex; align-items: center;">
+              <v-app-bar-title>Suppliers</v-app-bar-title>
+            </div>
+            <div class="cols" >
+              <div class="button-cover" v-if="!$vuetify.display.smAndDown">
+                  <v-btn>
+                      <v-icon
+                      start
+                      icon="mdi-sync"
+                      ></v-icon>
+                      SUPPLIER
+                  </v-btn>
+                  <v-btn>
+                      <v-icon
+                      start
+                      icon="mdi-sync"
+                      ></v-icon>
+                      PRODUCTS
+                  </v-btn>
+                  <v-btn>
+                      <v-icon
+                      start
+                      icon="mdi-sync"
+                      ></v-icon>
+                      ORDERS
+                  </v-btn>
               </div>
             </div>
-            <!-- <template v-slot:append>
-            </template> -->
-        </v-app-bar>
+          </div>
+        </v-app-bar> -->
         <router-view></router-view>
       </v-main>
     </v-layout>
@@ -274,9 +272,10 @@
 
 <script>
 import { Icon } from '@iconify/vue';
+import AppBar from '@/components/AppBar.vue';
 export default {
     name: 'DashboardVIew',
-    components: {Icon,},
+    components: {Icon, AppBar,},
     data () {
       return {
         drawer: true,
